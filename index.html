@@ -9,6 +9,106 @@
     <meta name="description" content="This is my Sparta Profile">
     <link href="profileStyle.css" rel="styleSheet" />
     <title>My Profile</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .box {
+            width: calc(33.33% - 20px);
+            background-color: #f2f2f2;
+            margin-bottom: 20px;
+            padding: 20px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 50px;
+        }
+
+        .newsBox {
+            max-width: 320px;
+            background-color: #f2f2f2;
+            margin-bottom: 20px;
+            padding: 20px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 50px;
+        }
+
+        .box h2 {
+            margin-top: 0;
+        }
+
+        .box ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .box ul li {
+            margin: 10px 0;
+        }
+
+        .profile-img {
+            float: left;
+            margin-right: 20px;
+        }
+
+        .profile-img img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+
+        .profile-info {
+            overflow: hidden;
+        }
+
+        .profile-info h2 {
+            margin-top: 0;
+        }
+
+        .profile-info p {
+            margin: 10px 0;
+            line-height: 1.5;
+        }
+
+        .profile-social {
+            margin-top: 20px;
+        }
+
+        .profile-social a {
+            display: inline-block;
+            margin-right: 10px;
+            color: #333;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -30,33 +130,33 @@
             <b>Welcome to my wonderful profile. </b><em>Enjoy!</em>
         </P>
     </header>
-    <div>
-        <h4>
-            My Skills
-        </h4>
-        <p>I am a professional nerd and currently working as a software developer</p>
+    <div class="container">
+        <div class="box">
+            <h2>My Skills</h2>
+            <ul>
+                <li>Warhammer 40K</li>
+                <li>Programming</li>
+                <li>Game Development</li>
+            </ul>
+        </div>
+        <div class="box">
+            <h2>My Hobbies</h2>
+            <ul>
+                <li>Photography</li>
+                <li>Painting</li>
+                <li>Making UI's</li>
+            </ul>
+        </div>
+        <div class="box">
+            <h2>My Goals</h2>
+            <ul>
+                <li>Learn C#</li>
+                <li>Travel back to Japan</li>
+                <li>Become a software developer</li>
+            </ul>
+        </div>
     </div>
-    <div>
-        <h4>
-            My Hobbies
-        </h4>
-        <ul>
-            <li>Warhammer 40k</li>
-            <li>Programming</li>
-            <li>Game Development</li>
-        </ul>
-    </div>
-    <div>
-        <h4>
-            Goals
-        </h4>
-        <ol>
-            <li>To become an automated software tester</li>
-            <li>To learn CSS</li>
-            <li>To be a really good painter</li>
-        </ol>
-    </div>
-    <div>
+    <div class="newsBox">
         <h3>
             Search for news
             <form action="https://www.bbc.co.uk/news">
